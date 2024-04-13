@@ -34,6 +34,7 @@ void LaunchGame()
     botChoice = 1 + (rand() % 3);
     std::cout << "\n Bot a choisi " << ConvertChoice(botChoice);
 
+    //Verdict
     if (userChoice == botChoice)
         std::cout << "\n\n EGALITE !";
     else
