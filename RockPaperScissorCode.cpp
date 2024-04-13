@@ -73,7 +73,7 @@ void AskPlayerChoice()
     std::cout << "\n Entrer votre choix : 1 = Pierre, 2 = Feuille, 3 = Ciseaux \n\n";
     std::cin >> userChoice;//check if invalid
 
-    if (std::cin.fail() || userChoice != 1 or 2 or 3)
+    if (std::cin.fail() || (userChoice != 1 && userChoice != 2 && userChoice != 3))
     {
         std::cin.clear();
         std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
